@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../Style/MindanaoBooth.style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="../Images/logo_T.png">
+    <title>Mindanao</title>
+</head>
+
+<body>
+
+    <a href="Exhibit.html" class="anchor">
+        Exit Mindanao Booth
+    </a>
+
+    <div class="img-container">
+        <img src="../Images/MindanaoBoothTN.png" width="100%">
+
+        <div class="btn-landmark">
+        </div>
+
+        <div class="btn-festivals">
+        </div>
+
+        <div class="btn-cusine"></div>
+
+        <div class="btn-map-info"></div>
+
+        <div class="btn-tv1">
+        </div>
+
+        <div class="btn-tv2">
+        </div>
+        <div class="video">
+            <video width="159" height="99" autoplay loop muted>
+                <source src="../Images/Mindanao.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="video-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <video width="100%" autoplay controls loop muted id="video-play">
+                        <source src="../Images/Mindanao.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-landmarks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome To Mindanao Landmarks</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <img src='../Images/Mindanao_Tourist Spots/Camiguin.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of idreamedofthis.com </p>
+                        <h5 class="mt-3">White Island Camiguin</h5>
+
+
+                        <h6 class="mt-3">Location: Camiguin</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>An uninhabited white sandbar with the picturesque Mt. Hibok-Hibok and Old Vulcan as its back drop. The picturesque island is ideal for swimming, sunbathing, snorkeling, and viewing the sunrise and sunset over Camiguin. It is located
+                            2 kilometers across Agoho and Yumbing.</p>
+
+                        <a href="https://philippines.travel/activities/white-island">https://philippines.travel/activities/white-island</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Mindanao_Tourist Spots/Hinatuan.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of pinterest.com </p>
+                        <h5 class="mt-3">Hinatuan Enchanted River (Surigao Del Sur)</h5>
+
+                        <h6 class="mt-3">Location: Surigao Del Sur</h6>
+                        <h6 class="mt-3">Description:</h6>
+
+                        <p>Swim into the glistening turquoise blue lagoon with crystal clear water that seems to be a natural aquarium, habituated by colorful fishes of different species and sizes. Be captivated with enchanting destinations that could be
+                            reached by a few minutes of boat ride and enjoy hopping from one island to another.</p>
+
+                        <a href="https://philippines.travel/activities/enchanted-river">https://philippines.travel/activities/enchanted-river</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Mindanao_Tourist Spots/MariaCristinaFalls.jpg' width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center;">Photo courtesy of wordpress.com </p>
+                        <h5 class="mt-3">Maria Cristina Falls</h5>
+
+                        <h6 class="mt-3">Location: Misamis Oriental</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>Be enthralled with this breathtaking 32 feet falls in Iligan and the source of industrial power for the island of Mindanao.Maria Cristina Falls is a natural landmark which Iligan City is very proud of. Its water flows from the
+                            Agus River and it is also harnessed as a source of electricity. It is also dubbed as the “Twin Falls” due to a large rock at the waterfall’s brink dividing the water flow. </p>
+
+                        <a href="https://philippines.travel/activities/ma-cristina-falls">https://philippines.travel/activities/ma-cristina-falls</a>,
+                        <a href="http://tupanggala.com/maria-cristina-falls/">http://tupanggala.com/maria-cristina-falls/</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Mindanao_Tourist Spots/Mt.Apo.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of traveloka.com </p>
+                        <h5 class="mt-3">Mt. Apo</h5>
+
+                        <h6 class="mt-3">Location: Davao City</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>
+                            Literally the ‘grandfather’ of all mountains, Mt. Apo is a volcano that has never blown its top and, at 2954m, is the highest peak in the Philippines. Most mornings it is clearly visible towering above Davao. However, by 8 am a mass of clouds resembling
+                            a fluffy snake usually conceals the peak. Local tribes believe deities reside near the summit and worship it as a sacred mountain, but it’s the environmental stress caused by human traffic that makes permission to climb it
+                            difficult to obtain. Coffee is grown on the mountain’s slopes, which sit at the same latitude as Ethiopia.
+                        </p>
+
+                        <a href="https://www.lonelyplanet.com/philippines/mt-apo">https://www.lonelyplanet.com/philippines/mt-apo</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Mindanao_Tourist Spots/Tinuy-an.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Nix Pelekai </p>
+                        <h5 class="mt-3">Tinuy-an Falls</h5>
+
+                        <h6 class="mt-3">Location: Surigao Del Sur</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>The name derives from the Visayan word “tuyo,” which means “aim,” the Tinuy-an falls is a beautiful white-water curtain that flows in three magnificent levels. Approximately 180 feet high and a breathtaking width of 95 meters,
+                            it is said to be the widest waterfalls in the Philippines. “The Niagara Falls of the Philippines” struts its majestic curtains of waters that flows through 3-tiers of land formation that forms pools of varying sizes and elevation
+                            below.
+                        </p>
+
+
+                        <a href="https://philippines.travel/activities/tinuy-falls">https://philippines.travel/activities/tinuy-falls</a>,
+                        <a href="https://daylightwanderers.com/tinuy-an-falls/">https://daylightwanderers.com/tinuy-an-falls/</a>
+
+                        <div class="mt-5">
+                            <img src='../Images//Mindanao_Tourist Spots/BarasBirdSanctuary.jpg' width="100%" class="img-thumbnail">
+                            <p style="text-align: center;">Photo courtesy of outoftownblog.com </p>
+                            <h5 class="mt-3">Baras Bird Sanctuary</h5>
+
+                            <h6 class="mt-3">Location: Sultan Kudarat</h6>
+                            <h6 class="mt-3">Description:</h6>
+                            <p>
+                                It was an avian explosion. Rey Malana, a former seaman, owned a 1.3 hectare patch of riverside peppercorn farm in Tacurong City. One morning in 1996, he spotted four egrets perched on a tree inside his property. The birds flew away later that day only
+                                to return with a few more winged companions. The cycle repeated every morning over five years, with other species coming in. And right before Malana’s eyes, their numbers skyrocketed to 20,000. Before he knew it, his black
+                                peppercorn farm could no longer function. The birds had taken over the farm. But Malana, a nature-lover, did not have any intention of shooing them away.
+
+                            </p>
+
+                            <a href="https://www.thepoortraveler.net/wp-content/uploads/2013/12/tacurong-bird-sanctuary.jpg">Source: https://www.thepoortraveler.net/wp-content/uploads/2013/12/tacurong-bird-sanctuary.jpg</a>
+                        </div>
+
+                        <hr>
+
+                        <div class="mt-5">
+                            <img src='../Images//Mindanao_Tourist Spots/Grand Mosque.jpg' width="100%" class="img-thumbnail">
+                            <p style="text-align: center;">Photo courtesy of Shad Bajunaid </p>
+                            <h5 class="mt-3">Grand Mosque in Cotabato</h5>
+
+                            <h6 class="mt-3">Location: Cotabato</h6>
+                            <h6 class="mt-3">Description:</h6>
+                            <p>
+                                The Grand Mosque built in Cotabato City was built in an attempt to help develop the Muslim community in the Southern Philippines region of Mindanao. As somewhat of a homage to the regions Islamic roots, the second largest mosque in Southeast Asia known
+                                as the Grand Mosque was built in Cotabato. This giant mosque, on Tamontaka Bubong Road, is the largest of its kind in the Philippines. This structure occupies an area of 5,000 square meters and is built on a 5-hectare plot
+                                of land. The Sultan Hassanal Bolkiah Masjid, also known as the Grand Mosque or Golden Mosque also features gold-plated domes with minarets which are over 40 meters high.
+
+                            </p>
+                            <p>The Sultan of Brunei, to whom the Grand Mosque was named after personally funded the construction of the mosque. The Sultan had an interest in developing the emerging Muslim community in the Southern Philippines. Through the
+                                efforts of former Congressman Didagen Dilangalen, the Sultans investment of Php300 million in the region took place. Interestingly the project, which was completed in 2011 was designed by Christian architect, Felino Palafox.
+                                The mosque also houses many guards who hold the Christian faith, this reflects the harmonious relationship between the different faiths of the region hold.
+
+                            </p>
+                            <a href=" https://www.phillife.co/mosque-cotabato/">Source: https://www.phillife.co/mosque-cotabato/</a>
+                        </div>
+
+                        <hr>
+
+                        <div class="mt-5">
+                            <img src='../Images//Mindanao_Tourist Spots/Sultan Kudarat Provincial Capitol.jpg' width="100%" class="img-thumbnail">
+                            <p style="text-align: center;">Photo courtesy of Den via medium.com </p>
+                            <h5 class="mt-3">Sultan Kudarat Provincial Capitol</h5>
+
+                            <h6 class="mt-3">Location: Sultan Kudarat</h6>
+                            <h6 class="mt-3">Description:</h6>
+                            <p>
+                                The Sultan Kudarat Provincial Capitol is the seat of government of the Province of Sultan Kudarat. The five-storey building incorporates elements of Islamic architecture in its design dominated by pointed arches and a majestic golden dome at the center.
+                                In front of the capitol building is an expansive green lawn at the center of which proudly stands the golden statue of Sultan Kudarat himself, after whom the province was named. The capitol celebrates the local art and
+                                culture of the province. The ceilings are adorned with festive Maguindanao likos of gold and orange colors, while Maranao woodwork with elaborate mother-of-pearl inlay serves as elegant accents inside the rooms.
+
+                            </p>
+
+                            <a href="https://www.pinasmuna.com/2014/05/sultan-kudarat-provincial-capitol.html">Source: https://www.pinasmuna.com/2014/05/sultan-kudarat-provincial-capitol.html</a>
+                        </div>
+
+                        <hr>
+
+
+                        <div class="mt-5">
+                            <img src='../Images//Mindanao_Tourist Spots/Sebu.jpg' width="100%" class="img-thumbnail">
+                            <p style="text-align: center;">Photo courtesy of Alyosha Robillos </p>
+                            <h5 class="mt-3">Sebu</h5>
+
+                            <h6 class="mt-3">Location: South Cotabato</h6>
+                            <h6 class="mt-3">Description:</h6>
+                            <p>
+                                Perched in the highlands of South Cotabato is the town of Lake Sebu, home to the indigenous T’boli and Ubo tribes and an emerging eco-tourism and adventure destination in Southern Mindanao. Known for its majestic waterfalls, lakes, rivers and springs,
+                                and with its rich biodiversity and culture, Lake Sebu is starting to hit big in the tourism landscape of the region. Its main attractions include Lake Sebu, the biggest of the three lakes that dot the town and an important
+                                watershed in the region being the source of water of the provinces of South Cotabato and Sultan Kudarat
+
+                            </p>
+
+                            <a href="https://www.lakwatsero.com/destinations/travel-guide-lake-sebu/#sthash.8rFHXraJ.dpbs">Source: https://www.lakwatsero.com/destinations/travel-guide-lake-sebu/#sthash.8rFHXraJ.dpbs</a>
+                        </div>
+
+                        <hr>
+
+                        <div class="mt-5">
+                            <img src='../Images//Mindanao_Tourist Spots/Sarangani Bay.jpg' width="100%" class="img-thumbnail">
+                            <p style="text-align: center;">Photo courtesy of outoftownblog.com </p>
+                            <h5 class="mt-3">Sarangani Bay</h5>
+
+                            <h6 class="mt-3">Location: Sarangani Province</h6>
+                            <h6 class="mt-3">Description:</h6>
+                            <p>
+                                Sarangani Bay has proven once again why it is one of the archipelago’s most biodiverse bodies of water, with the frequent sightings of marine mammals as reported in the monthly monitoring by a composite team of provincial and regional environmentalists.
+                                The monitoring team recently sighted three marine mammal species, which include spinner dolphins, Risso’s dolphins, and dugong or sea cow.
+                            </p>
+
+                            <a href="https://outoftownblog.com/sarangani-bay-a-haven-of-marine-mammals/">Source: https://outoftownblog.com/sarangani-bay-a-haven-of-marine-mammals/</a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-cusine" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Mindanao's Famous Dishes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Dito na yung cusine/dishes -->
+                    <div class="mt-5">
+                        <h5 class="mt-3">DELICACIES
+                        </h5>
+                        <img src='../Images/Mindanao_Cuisine/TuronesDeMani.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Kusina Chef via youtube.com</p>
+                        <h5 class="mt-3">Turones De Mani</h5>
+                        <h6 class="mt-3">Delicacy of Camiguin</h6>
+                        <p>A local delicacy from the island of Camiguin. It is produced by La Salud. It's a crispy barquillion with a sweet peanut-honey filling. A nougat confection, typically made of honey, sugar, and egg white, coated in crushed, toasted
+                            peanuts, and usually shaped into either a rectangular tablet or a round cake. This candy is evidently derived or is a variety of the Spanish turrón. In the Philippines, turrones de mani is sold or prepared mostly as a traditional
+                            dessert for Christmas.
+                        </p>
+
+                        <a href="http://www.findglocal.com/PH/Mambajao/1536081723082528/La-Salud-Turrones-de-Mani">Source: http://www.findglocal.com/PH/Mambajao/1536081723082528/La-Salud-Turrones-de-Mani</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Mindanao_Cuisine/Caycay.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Arni Aclao / SunStar Foto</p>
+                        <h5 class="mt-3">CAY-CAY </h5>
+                        <h6 class="mt-3">Delicacy of Northern Mindanao </h6>
+                        <p>A Northern Mindanao cookie that is round and flat and topped with lots of crushed peanuts. Caycay making takes three days. Day one is dedicated for baking the biscuits. Day two is for roasting and grinding (this step is repeated
+                            thrice for ultra-fine results) the peanuts, while day three is for coating the biscuits in simple syrup (paglatik) and rolling them around the ground nuts (pagkaykay).
+                        </p>
+
+                        <a href="http://glossaryoffilipinofood.blogspot.com/2014/03/list-of-filipino-cookies-biscuits-and.html">Source: http://glossaryoffilipinofood.blogspot.com/2014/03/list-of-filipino-cookies-biscuits-and.html</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Mindanao_Cuisine/Durian.jpg' width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center;">Photo courtesy of buklat.blogspot.com</p>
+                        <h5 class="mt-3">Durian </h5>
+                        <h6 class="mt-3">Delicacy of Southern Mindanao </h6>
+                        <p>A.K.A “King of Fruits”. Durian trees grow almost exclusive in Mindanao, particularly in Davao, Cotabato, Sulu and Agusan. In fact, Southern Mindanao is considered as the ‘durian republic’ in the Philippines.
+
+                        </p>
+
+                        <a href="http://durianinfo.blogspot.com/p/durian-varieties-of philippines.html#:~:text=Presently%2C%20the%20country%20is%20actively,durian%20republic'%20in%20the%20Philippines.">Source: http://durianinfo.blogspot.com/p/durian-varieties-of philippines.html#:~:text=Presently%2C%20the%20country%20is%20actively,durian%20republic'%20in%20the%20Philippines.</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5 ">
+                        <img src='../Images/Mindanao_Cuisine/Tinagtag.jpg' width="100% " class="img-thumbnail">
+
+                        <p style="text-align: center;">Photo courtesy of Dawnnie Young</p>
+                        <h5 class="mt-3">Tinagtag </h5>
+                        <h6 class="mt-3">Delicacy of Maguindanaons </h6>
+                        <p>Tinagtag came from the root word “Tagtag” which means tapping. It is made from grounded rice then cook in oil. The procedure of cooking implies its name where it needs a great patience to produce such a yummy food. It is made up
+                            of ground rice and sugar with a little water added which produce a thick mixture placed over a coconut shell drilled with small holes and fixed to a wooden stick bind with a rope and tied to a pole. The mixture filter on a
+                            pan of boiling oil as the cook taps the stick while making a circling motion that results to a round form of crosscut brown strips when fried totally.
+                        </p>
+
+                        <a href="https://w0wmindanao.wordpress.com/mindanao-in-focus/south-central-mindanao-delicacies/tinagtag/">Source: https://w0wmindanao.wordpress.com/mindanao-in-focus/south-central-mindanao-delicacies/tinagtag/</a>
+                    </div>
+
+                    <hr>
+                    <div>
+                        <h5 class="mt-3 ">CUISINES
+                        </h5>
+                        <img src='../Images/Mindanao_Cuisine/Curacha.jpg' width="100% " class="img-thumbnail">
+
+                        <h5 class="mt-3 ">Curacha</h5>
+                        <p>Curacha is famous in Mindanao, especially in Zamboanga. It’s a spanner crab or red frog crab, a crustacean hybrid native to the waters of Zamboanga and Sulu. It can be cooked with sauce or steamed.</p>
+
+                        <a href="https://balay.ph/best-mindanao-cuisine/">https://balay.ph/best-mindanao-cuisine/</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5 ">
+                        <img src='../Images/Mindanao_Cuisine/Pyanggang.jpg' width="100%" class="img-thumbnail">
+
+                        <h5 class="mt-3 ">Pyanggang</h5>
+                        <p>Pyanggang is a Tausug dish similar to a chicken barbecue only it’s black but not because it’s burnt. One of the ingredients, coconut meat, is burnt before it is grounded. It is then combined with other spices to make a paste or
+                            marinade sauce for the chicken.</p>
+
+                        <a href="https://balay.ph/best-mindanao-cuisine/">https://balay.ph/best-mindanao-cuisine/</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5 ">
+                        <img src='../Images/Mindanao_Cuisine/SATTI.jpg' width="100%" class="img-thumbnail">
+
+                        <h5 class="mt-3 ">Satti</h5>
+                        <p>Satti is a popular breakfast food in Mindanao particularly in Zamboanga. It’s actually three small bits of meat (beef and chicken liver) grilled in a stick similar to a barbecue, only it is served along with rice balls swimming
+                            in a sweet spicy sauce.</p>
+
+                        <a href="https://balay.ph/best-mindanao-cuisine/">https://balay.ph/best-mindanao-cuisine/</a>,
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5 ">
+                        <img src='../Images/Mindanao_Cuisine/RENDANG.jpg' width="100%" class="img-thumbnail">
+
+                        <h5 class="mt-3 ">Rendang</h5>
+                        <p>A dish acquired by Maranaos in Southern Philippines from their neighboring country Indonesia. The Filipino version of the dish is a bit different in terms of preparation methods to suit their tastes and some ingredients are substituted
+                            with local components. Maranao’s rendang is prepared by crushing the spices before frying and cooking it with the beef and coconut milk. The dish can also be described as a caramelized curry.</p>
+
+                        <a href="https://balay.ph/best-mindanao-cuisine/">https://balay.ph/best-mindanao-cuisine/</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5 ">
+                        <img src='../Images/Mindanao_Cuisine/Biryani.jpg' width="100%" class="img-thumbnail">
+
+                        <h5 class="mt-3 ">Biryani</h5>
+                        <p>Biryani dish is said to be a food made by the Muslim community in Indian/Persian region. So, it’s no surprise that this delicious recipe has made its way to the Muslim community as part Mindanao cuisine. Biryani is basically a
+                            fried rice dish with bits of chicken or seafood and other spices.</p>
+
+
+                        <a href="https://balay.ph/best-mindanao-cuisine/">https://balay.ph/best-mindanao-cuisine/</a>,
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-map-info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLabel">Mindanao's Map Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Map Information -->
+                    <div>
+                        <img src='../Images/Mindanaomap.jpg' width="100%" class="img-thumbnail">
+
+                        <h5 class="mt-3">Mindanao Islands</h5>
+                        <ul>
+                            <li>The name Mindanao came after the Maguindanaons who constituted the largest Sultanate which settled in the area. It is said to be the name that used to refer to the island with powerful natives during 17th and 18th centuries.</li>
+                            <li>Second largest island group next to Luzon</li>
+                            <li>Composes of Six Region namely:</li>
+
+                            <ol>
+                                <li>Region 9: Zamboanga Peninsula Zamboanga del Norte, Zamboanga del Sur, Zamboanga Sibugay</li>
+                                <li>Region 10: Northern Mindanao Bukidnon, Camiguin, Lanao del Norte, Misamis Occidental, Misamis Orientalr</li>
+                                <li>Region 11: Davao Region Davao de Oro, Davao del Norte, Davao del Sur, Davao Occidental, Davao Oriental</li>
+                                <li>Region 12: Soccskargen Cotabato, Sarangani, South Cotabato, Sultan Kudarat</li>
+                                <li>Region 13: Caraga Region Agusan del Norte, Agusan del Sur, Dinagat Islands, Surigao del Norte, Surigao del Sur</li>
+                                <li>Barmm: Bangsamoro Autonomous Region in Muslim Mindanao Basilan, Lanao del Sur, Maguindanao, Sulu, Tawi-Tawi</li>
+
+                            </ol>
+
+                            <li>Dubbed as the country’s “Land of Promise” for its untapped, promising natural resources.</li>
+                            <li>Known to have the largest Muslim community and diverse native ethnic groups in the country. </li>
+                            <li>Home of the:</li>
+                            <ul>
+                                <li style="list-style-type:square">Surf Capital of the Country (Siargao)</li>
+                                <li style="list-style-type:square">Famous highly-urbanized city</li>
+                                <li style="list-style-type:square">Jaw-dropping beaches</li>
+                            </ul>
+
+                        </ul>
+
+                        <a href="https://theculturetrip.com/asia/philippines/articles/travellers-guide-to-mindanao-philippines/">https://theculturetrip.com/asia/philippines/articles/travellers-guide-to-mindanao-philippines/</a>
+                        <a href="https://www.philippinesvisa.com/regions-and-provinces/">https://www.philippinesvisa.com/regions-and-provinces/</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-festivals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Mindanao Festivals</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Festivals -->
+                    <div>
+                        <img src='../Images/Mindanao_Festival/Kadayawan.jpg' width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center; ">Photo courtesy of Constantine Agustin</p>
+
+
+                        <h5 class="mt-3">Kadayawan Festival</h5>
+
+                        <h6 class="mt-3">Location: Davao City
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: Every 3rd week of August </h6>
+
+
+                        <p>It is an annual festival in the city of Davao in the Philippines. Derived from the word “madayaw” which means good, valuable, and superior. Kadayawan Festival tagalog means pasasalamat at pagpapahalaga. It is the celebration of
+                            life, a thanksgiving for the gifts of nature, the wealth of culture, and bounties of harvest and serenity of living.</p>
+
+                        <a href="https://sites.google.com/site/touristsdestination/mindanao">https://sites.google.com/site/touristsdestination/mindanao</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5 ">
+                        <img src='../Images/Mindanao_Festival/Lanzones.jpg' width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center; ">Photo courtesy of rappler.com</p>
+
+
+                        <h5 class="mt-3">Lanzones Festival</h5>
+
+                        <h6 class="mt-3">Location: Camiguin Island
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: Every 3rd or 4th week of October </h6>
+                        <p>It is an annual thanksgiving celebration for Camiguin Island's bountiful harvest. The town of Mambajao holds the feast during October in time for the season of the tropical fruit Lanzones.
+                            <br>
+                            <br> Along the north-central coast of Mindanao. The locals and tourists enjoy this weeklong celebration with a line-up of activities showcasing the richness culture in Camiguin like street dancing, grand Ianzones parade, agri-cultural
+                            industry products, exhibits, and beauty pageants. Aside from this, the people also await the annual barangay beautification contest, indigenous sports, and tableau of local culture within the week.</p>
+
+                        <a href="https://www.silent-gardens.com/blog/lanzones-festival-2016-not-biggest-surely-sweetest-festival/">https://www.silent-gardens.com/blog/lanzones-festival-2016-not-biggest-surely-sweetest-festival/</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5 ">
+                        <img src='../Images/Mindanao_Festival/T-nalak.jpg' width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center; ">Photo courtesy of Keith Bacongco</p>
+
+
+                        <h5 class="mt-3">Pahiyas Festival</h5>
+
+                        <h6 class="mt-3">Location: Photo courtesy of Keith Bacongco
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: Every July 18 </h6>
+                        <p>The festival’s unique name is attributed to a popular piece of colorful cloth woven by the local T’boli women (T’boli is a tribe in the region). The cloth is known as a T’nalak, and is made of abaca clothing. There are a number
+                            of reasons why this was the choice clothing among so many options. T’nalak is woven by the women of the community, symbolizing their diversity and unified resilience. The actual process of weaving the T’nalak is a tedious one,
+                            requiring a lot of patience, precision and effort. Which actually reminds the participants that is the only way to obtain quality.</p>
+
+                        <a href="https://expertworldtravel.com/philippines/tnalak-festival/#:~:text=T 'nalak%20Festival%2C%20also%20known,a%20tribe%20in%20the%20region).">https://expertworldtravel.com/philippines/tnalak-festival/#:~:text=T'nalak%20Festival%2C%20also%20known,a%20tribe%20in%20the%20region).</a>,
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Mindanao_Festival/Sirong.jpg' width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center; ">Photo by Dino from Cantilan Sirong Facebook Page</p>
+
+
+                        <h5 class="mt-3">Pahiyas Festival</h5>
+
+                        <h6 class="mt-3">Location: Cantilan, Surigao Del Sur
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: August 14 </h6>
+                        <p>It is about commemorating that portion of Cantilan’s history where early Christians had to defend themselves against the raids perpetrated by Islamized natives or muslims, then called by the Spaniards as Moors or Moros. It was
+                            said that from 1768 to 1830, several attacks were launched by the Moros, prompting the Spanish government and the people of Cantilan to establish the Baluarte de San Miguel that served as a fortress. The people also defended
+                            themselves by means of SIRONG or ESCRIMA.
+                            <br>
+                            <br> It has been said that during those days, some of the raiding Moros were driven out of the shore by the image of a woman which believers later claimed to be the Blessed Virgin Mary. The apparition of the Virgin Mary every
+                            time Moro raiders would attack Cantilan had captivated the hearts of the Cantilangnons, and nurtured in them a deep devotion to the Christian faith.
+                            <br>
+                            <br> The festival, as a way of commemorating that colorful part of Cantilan’s history, features an ethnic mardi-gras parade and street dancing, culminating into a war dance, and where the marauders are depicted to have been
+                            driven out by virtue of the intercession of the Blessed Mother.
+                        </p>
+
+                        <a href="https://www.facebook.com/SirongFestival/?ref=page_internal">https://www.facebook.com/SirongFestival/?ref=page_internal </a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Mindanao_Festival/Hudyaw.jpg' width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center; ">Photo courtesy of Matettosan via steemit.com</p>
+
+
+                        <h5 class="mt-3">Hudyaw sa Kadagatan Festival</h5>
+
+                        <h6 class="mt-3">Location: Kauswagan, Lanao Del Norte
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: Every April 24 </h6>
+                        <p>A Sea Dancing Festival, the local thanksgiving to God for the year’s bountiful harvest of the sea. Kauswagan is famous for its abundance in coastal resources such as fresh fish and shells which brought interest to business sectors
+                            to engage in food, shell craft and other industries.
+                            <br>
+                            <br> Hugyaw sa Kadagatan Festival was conceived and aptly celebrated by the seas. Hugyaw is a bisayan term for “roar’ while Kadagatan refers to the “sea”.</p>
+
+
+                        <a href="https://lanaodelnorte.gov.ph/2018/04/22/hugyaw-sa-kadagatan-festival/">https://lanaodelnorte.gov.ph/2018/04/22/hugyaw-sa-kadagatan-festival/</a>
+
+
+
+
+                        <div>
+                            <img src='../Images/Mindanao_Festival/Kalilangan.jpg' width="100%" class="img-thumbnail">
+
+                            <p style="text-align: center; ">Photo Courtesy of BaiJanena JA. Tito via gensancemcdo.org</p>
+
+
+                            <h5 class="mt-3">Pahiyas Festival</h5>
+
+                            <h6 class="mt-3">Location: General Santos City, South Cotabato
+                            </h6>
+                            <h6 class="mt-3">Date of celebration: Every February 20 to 27 </h6>
+                            <p> Kalilangan means festival, feastivity or jubilee. It is a social gathering marked by exchanging of amenities among traditional leaders, elders, allies and subordinates in varying tones.</p>
+                            <p>It is Gensan’s cultural festival, a celebration of harmony amidst cultural diversity of its inhabitants, called Generals. Endowed with colorful, dynamic and mystical existence of its tri people (Natives (Blaan’s & T’boli’s)
+                                , Muslim Tribe and the majority Christian Groups) , a festival fitted for its convergence whereby peaceful co-existence was conceptualized.</p>
+                            <p>The main uniqueness of Kalilangan is that, it is not religious in nature, unlike most festivals of the country. But rather, it is a festival of unity , of Gensan’s culture, of Gensan’s way of life.</p>
+
+                            <a href="https://www.gensancemcdo.org/tourism-division/festivals-events-section/kalilangan-festival/">Source: https://www.gensancemcdo.org/tourism-division/festivals-events-section/kalilangan-festival/</a>
+                        </div>
+
+                        <hr>
+
+                        <div>
+                            <img src='../Images/Mindanao_Festival/Banana.jpg' width="100%" class="img-thumbnail">
+
+                            <p style="text-align: center; ">Photo courtesy of flickr.com</p>
+
+
+                            <h5 class="mt-3">Pahiyas Festival</h5>
+
+                            <h6 class="mt-3">Location: Baco, Oriental Mindoro
+                            </h6>
+                            <h6 class="mt-3">Date of celebration: Every March 18- 19 </h6>
+                            <p>The Banana Festival is a two-day affair that is held annually. One of the highlights of this festival is the banana cook fest where visitors compete to create the best banana meal plans. The street dancing contest for a locally-inspired
+                                competition. This is then followed by a beauty pageant where the ladies battle it out for the title of the festival.</p>
+                            <p>The festival brings together farmers from all parts of the country to show off their best produce and gather around all sorts of treats, dishes, and souvenirs made of bananas. </p>
+
+                            <a href="https://expertworldtravel.com/philippines/banana-festival/">Source: https://expertworldtravel.com/philippines/banana-festival/</a>
+                        </div>
+
+                        <hr>
+
+                        <div>
+                            <img src='../Images/Mindanao_Festival/Bulawan.jpg' width="100%" class="img-thumbnail">
+
+                            <p style="text-align: center; ">Photo courtesy of nabunturan.gov.ph</p>
+
+
+                            <h5 class="mt-3">Anibina Bulawanon/Bulawan Festival</h5>
+
+                            <h6 class="mt-3">Location: Compostela Valley
+                            </h6>
+                            <h6 class="mt-3">Date of celebration: Every March 1-8 </h6>
+                            <p>The term "Anibina" is coined from two terms - "ani" meaning harvest; and "bina" meaning gold veins. "Bulawanon" translates to "golden".</p>
+                            <p>This is an eight-day multi-themed annual festival that culminates on the province’s foundation day, March 8. It is a colorful and joyful celebration of the province’s rich agricultural harvests, abundant mineral resources,
+                                governance’s feats, trade and tourism fair, and a showcasing of the people’s culture and traditions. The Al-law Ng Kalomonan (Tribal Day) falls on the 7th day of Anibina.</p>
+
+                            <a href="https://www.tpb.gov.ph/tpb-calendar-of-promotions-and-marketing-activities/calendar-of-philippine-festivals-and-monthly-observances-theme/">Source: https://www.tpb.gov.ph/tpb-calendar-of-promotions-and-marketing-activities/calendar-of-philippine-festivals-and-monthly-observances-theme/</a>
+                        </div>
+
+                        <hr>
+
+                        <div>
+                            <img src='../Images/Mindanao_Festival/Naliyagan.jpg' width="100%" class="img-thumbnail">
+
+                            <p style="text-align: center; ">Photo courtesy of hellotravel.com</p>
+
+
+                            <h5 class="mt-3">Naliyagan Festival</h5>
+
+                            <h6 class="mt-3">Location: Every 2nd Week of June
+                            </h6>
+                            <h6 class="mt-3">Date of celebration: Every 2nd Week of June </h6>
+                            <p>Incepted in 1993 during the incumbency of the late Gov. Democrito O. Plaza, the festival is a recognition of the Manobo people’s loyalty to their tribal leader, Datu Lipus Makapandong. Literally meaning “the chosen one” the
+                                weeklong celebration showcases the indigenous people’s culture through music and dance, native products, ethnic games, and a host of sporting tournaments and special events.
+                            </p>
+                            <p>The festival depicts the Agusanon culture and heritage. Natives from far-flung places of the province usually come down and display skills through tribal dances and rituals. A trade fair displaying the province’s cottage industries
+                                also takes place in Naliyagan Cultural Center Grounds at the Gov. D. O. Plaza Government Center, Prosperidad.</p>
+                            <a href="https://www.tpb.gov.ph/tpb-calendar-of-promotions-and-marketing-activities/calendar-of-philippine-festivals-and-monthly-observances-theme/
+
+                            ">Source: https://www.tpb.gov.ph/tpb-calendar-of-promotions-and-marketing-activities/calendar-of-philippine-festivals-and-monthly-observances-theme/
+
+                        </a>
+                        </div>
+
+                        <hr>
+
+                        <div>
+                            <img src='../Images/Mindanao_Festival/Hinugyaw.jpg' width="100%" class="img-thumbnail">
+
+                            <p style="text-align: center; ">Photo courtesy of nomadperspectives.com</p>
+
+
+                            <h5 class="mt-3">Hinugyaw Festival</h5>
+
+                            <h6 class="mt-3">Location: Koronadal City, South Cotabato
+                            </h6>
+                            <h6 class="mt-3">Date of celebration: January 10 </h6>
+                            <p>Hinugyaw Festival is a colorful merrymaking depicting the evolution of the distinct cultures of the B'laan,Maguindanaons and Christians into a singular wave of rhythm. The festival shows the festive spirit with street dancing
+                                parade,talent shows and beauty pageant,sports events and nightly street parties.</p>
+
+                            <a href="https://philippines.travel/events/hinugyaw-festival ">Source: https://philippines.travel/events/hinugyaw-festival </a>
+                        </div>
+
+                        <hr>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../script/MindanaoBooth.script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/606c02c8f7ce182709376eea/1f2iulnre';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+
+</html>

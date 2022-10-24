@@ -1,0 +1,166 @@
+body {
+    background-image: url('../Images/au-bg-blur.jpg');
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+.anchor {
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe Print';
+    color: #ffff;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.anchor:hover {
+    color: #8a8a8a;
+}
+
+.luzon-booth {
+    width: 1100px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.luzon-booth .btn-landmark {
+    height: 330px;
+    width: 160px;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
+
+.luzon-booth .btn-landmark:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: .3s all ease;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.luzon-booth .btn-cuisine {
+    height: 190px;
+    width: 125px;
+    position: absolute;
+    top: 170px;
+    left: 270px;
+}
+
+.luzon-booth .btn-cuisine:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: .3s all ease;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.luzon-booth .btn-map {
+    height: 190px;
+    width: 125px;
+    position: absolute;
+    top: 170px;
+    left: 710px;
+}
+
+.luzon-booth .btn-map:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: .3s all ease;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.luzon-booth .btn-festival {
+    height: 330px;
+    width: 160px;
+    position: absolute;
+    top: 80px;
+    left: 890px;
+}
+
+.luzon-booth .btn-festival:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: .3s all ease;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.luzon-booth .btn-tv1 {
+    height: 100px;
+    width: 160px;
+    position: absolute;
+    top: 0px;
+    left: 469px;
+}
+
+.luzon-booth .btn-tv1:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: .3s all ease;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.luzon-booth .btn-tv2 {
+    height: 99px;
+    width: 170px;
+    position: absolute;
+    top: 130px;
+    left: 468px;
+    z-index: 2000;
+}
+
+.luzon-booth .btn-tv2:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: .3s all ease;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.modal.fade .modal-body {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.modal.fade h5,
+.modal.fade h6 {
+    font-family: 'Segoe Print';
+    color: #007cc3;
+    font-weight: 600;
+}
+
+.modal.fade p,
+.modal.fade ul li {
+    font-weight: 600;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif
+}
+
+.modal.fade p {
+    text-indent: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    word-wrap: break-word;
+}
+
+#video-modal .modal-title,
+#video-modal h5 {
+    font-family: 'Segoe Print';
+    color: #007cc3;
+    font-weight: 600;
+}
+
+.video {
+    top: 130px;
+    left: 468px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.modal.fade {
+    z-index: 7000;
+}

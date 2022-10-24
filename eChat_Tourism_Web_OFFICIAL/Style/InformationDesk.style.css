@@ -1,0 +1,112 @@
+body{
+    background-image: url('../Images/au-bg-blur.jpg');
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe Print';
+    color: #ffff;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+a:hover{
+    color: #8a8a8a;
+}
+
+.img-container{
+    width: 1100px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.img-container .btn-tribe{
+    height: 300px;
+    width: 100px;
+    position: absolute;
+    top: 260px;
+    left: 20px;
+}
+
+.img-container .btn-tribe:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: .3s all ease;
+    cursor: pointer;
+}
+
+.img-container .btn-eChat{
+    height: 300px;
+    width: 100px;
+    position: absolute;
+    top: 260px;
+    right: 15px;
+}
+
+.img-container .btn-eChat:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: .3s all ease;
+    cursor: pointer;
+}
+
+.logo-container{
+    position: absolute;
+    width: 150px;
+    bottom: -60px;
+    left: 450px;
+}
+
+.img-container .btn-video{
+    width: 340px;
+    height: 200px;
+    top: 50px;
+    left: 400px;
+    position: absolute;
+    z-index: 2000;
+}
+
+.video{
+    top: 50px;
+    left: 400px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.img-container .btn-video:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: .3s all ease;
+    cursor: pointer;
+}
+
+#tribe-modal .modal-title, #eChat-modal .modal-title, #video-modal .modal-title, #video-modal h5{
+    font-family: 'Segoe Print';
+    color: #007cc3;
+    font-weight: 600;
+}
+
+#tribe-modal .modal-body p, #eChat-modal .modal-body p{
+    line-height: 35px;
+    text-align: justify;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+    text-indent: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Open Sans', sans-serif
+}
+
+.modal.fade{
+    z-index: 7000;
+}
+/* 
+    headings-;
+    color: rgb(87, 87, 87);
+    color: #007cc3;
+    paragraph-font-family: 'Open Sans', sans-serif;
+*/

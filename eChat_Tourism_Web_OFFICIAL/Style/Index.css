@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  padding: 5px 15px;
+  background-color: rgba(43, 45, 59, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #da373c;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.content .content-text {
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.content p {
+  color: rgb(105, 105, 105);
+}
+
+.modal-dialog {
+  margin-top: 20px;
+}
+
+.modal-body,
+.modal-footer,
+.modal-header {
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 5px 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    padding: 0px 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    padding: 0px 200px;
+  }
+}
+
+.footer {
+  background-color: rgba(43, 45, 59, 0.8);
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.footer:hover {
+  color: #da373c;
+}
+
+.modal.fade h5,
+.modal.fade h6 {
+  font-family: "Segoe Print";
+  color: #007cc3;
+  font-weight: 600;
+}
+
+.modal.fade p,
+.modal.fade ul li {
+  font-weight: 600;
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+}
+
+.modal.fade p {
+  text-indent: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}

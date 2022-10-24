@@ -1,0 +1,73 @@
+nav {
+    width: 100%;
+    padding: 5px 50px;
+    background-color: rgba(43, 45, 59, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: #da373c;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-container .desk-booth,
+.inner-container .luzon-booth,
+.inner-container .visayas-booth,
+.inner-container .mindanao-booth {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.luzon-booth:hover {
+    transform: scale(1.2);
+}
+
+.visayas-booth:hover {
+    transform: scale(1.2);
+}
+
+.mindanao-booth:hover {
+    transform: scale(1.2);
+}
+
+.desk-booth:hover {
+    transform: scale(1.2);
+}
+
+.inner-container img{
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .inner-container {
+        flex-direction: row-reverse;
+        margin-top: -25%;
+    }
+    .luzon-booth {
+        margin-top: 8% !important;
+    }
+    .visayas-booth {
+        margin-top: 5% !important;
+    }
+    .mindanao-booth {
+        margin-top: 9% !important;
+    }
+}

@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../Style/VisayasBooth.style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="../Images/logo_T.png">
+    <title>Visayas</title>
+</head>
+
+<body>
+
+    <a href="Exhibit.html" class="anchor">
+        Exit Visayas Booth
+    </a>
+
+    <div class="img-container">
+        <img src="../Images/Visayas_Booth.png" width="100%">
+
+        <div class="btn-landmark">
+        </div>
+
+        <div class="btn-festivals">
+        </div>
+
+        <div class="btn-cuisine"></div>
+
+        <div class="btn-map-info"></div>
+
+        <div class="btn-tv1"></div>
+
+        <div class="btn-tv2"></div>
+
+        <div class="video">
+            <video width="170" height="99" autoplay loop muted>
+                <source src="../Images/Visayas.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
+    <div class="modal fade" id="video-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <video width="100%" autoplay controls loop muted id="video-play">
+                        <source src="../Images/Visayas.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-landmarks" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome To Visayas Tourist Spot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <img src='../Images/Visayas_Island/Kalaggaman_Island.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of traveltomtom.net</p>
+
+
+
+                        <h5 class="mt-3">Kalanggaman Island</h5>
+                        <h6 class="mt-3">Location: Palompon, Leyte</h6>
+                        <p>The island got its name from the root word "langgam", which means bird in Bisaya. Viewed from above, the two ends of the island seem to flap like bird’s wings with the changing tides. With nothing but sun, sand, and surf, the 795-meter
+                            sand bar in Palompon, Leyte is a picture-perfect destination with nothing to distract from its beauty.</p>
+
+                        <a href="https://philippines.travel/activities/kalanggaman-island ">https://philippines.travel/activities/kalanggaman-island </a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Island/Bantayan_Island.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo Courtesy of Jonny Melon</p>
+
+                        <h5 class="mt-3">Bantayan Island</h5>
+                        <p>Serene and tranquil, and boasting of fine white sand beaches, this island is a favorite holiday hangout, especially during the Lenten season. The historically rich Holy Week celebration of Bantayan Island is among the most elaborate
+                            in the country—using life size statues during the Holy Thursday and Good Friday processions. Bantayanons also enjoy a rare Holy Week privilege of Catholic Church exemption from fasting from a 200-year old Papal Bull edict.</p>
+
+                        <a href="https://philippines.travel/activities/bantayan-island">:https://philippines.travel/activities/bantayan-island</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Island/Philippine_Tarsier_Sanctuary.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of JT Lim Majuro in Philippine Tarsier in Bohol (Wikipedia)</p>
+
+                        <h5 class="mt-3">Philippine Tarsier Sanctuary</h5>
+                        <h6 class="mt-3">Location: Corella, Bohol</h6>
+                        <p>In Canapnapan, a barangay of Corella, you can see saucer-eyed tarsiers in the wild at the Philippine Tarsier Sanctuary. Over 100 of these territorial primates hang out in the immediate vicinity of the centre, though only eight
+                            are in the viewing area. The guides will bring you right to them via a short jungle trail; no flash photography is permitted. The visitors centre includes good information boards and the whole forested sanctuary is well managed
+                            and a pleasure to visit. </p>
+
+                        <br>
+
+                        <p>These cute furry creatures are considered as the smallest primate in the world. They weigh only about 113 to 142 grams or four to five ounces. Tarsiers are named such due to their special elongated tarsal bones, which form their
+                            ankles and enable them to leap almost 10 feet from tree to tree. The most notable feature of the tarsier is their eyes, which are bigger than its entire brain. They hunt at night exclusively for animal prey which includes insects
+                            such as cockroaches and crickets. </p>
+
+                        <a href="https://philippines.travel/activities/philippine-tarsier-sanctuary">https://philippines.travel/activities/philippine-tarsier-sanctuary</a>,
+                        <a href="https://www.lonelyplanet.com/philippines/loboc/attractions/philippine-tarsier-sanctuary/a/poi-sig/1451016/1338267 ">https://www.lonelyplanet.com/philippines/loboc/attractions/philippine-tarsier-sanctuary/a/poi-sig/1451016/1338267 </a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Island/Chocolate_Hills.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Alami</p>
+
+                        <h5 class="mt-3">Chocolate Hills</h5>
+                        <h6 class="mt-3">Location: Corella, Bohol</h6>
+                        <p>
+                            The Chocolate Hills are a group of unusually shaped hills located in the middle of the island of Bohol in Philippines. This extraordinary landscape is unique to this small island. It is unknown how many chocolate hills there are. It is known that at the
+                            bare minimum there are 1268 hills but some estimates put this number as high as 1776. The hills are not huge; the highest one barely reaches 120 meters in height. Even so, most hills are between 30 and 50 meters. The conical
+                            Chocolate hills are scattered within a fifty square kilometer area. Mystery still surrounds how the Chocolate Hills were formed. One of the more popular local legends is that long ago, two giants fought for days, hurling earth
+                            and stones at one another, until they fall exhausted, friends once more, into each other's arms. However, geologists have differing views about how these hills were formed. One plausible theory is that they are weathered formations
+                            of a marine limestone lying on top of an impenetrable clay base. .
+                        </p>
+
+                        <a href="http://www.chocolatehills.net/">http://www.chocolatehills.net/</a>,
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Island/Boracay_Island.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Alamy Stock Photo</p>
+
+                        <h5 class="mt-3">Boracay Island</h5>
+                        <h6 class="mt-3">Location: Malay, Aklan</h6>
+
+                        <p>While only 7km tall and at its bikini line 500m wide, tiny Boracay is the Philippines' top tourist draw, fueled by explosive growth and a tsunami of hype. The influx of visitors caused the Philippines government to temporarily
+                            close Boracay to tourists for six months. This 'rehabilitation' period, was used to restore the island to its former glory and it has since reopened with a limit on the number of daily visitors. The centre of the action is
+                            dreamy White Beach, a 4km, postcard-perfect stretch of sand lined from one end to the other with hotels, restaurants, bars and dive shops several blocks deep. The beach path is typically awash with visitors, including large
+                            groups of package tourists. The ocean is full of romantic paraws (an outrigger sailboat) giving rides; colourful parasails fill the air. After perfect sunsets, live music breaks out, and fire dancers twirl their batons.</p>
+
+
+                        <a href="https://www.lonelyplanet.com/philippines/the-visayas/boracay">https://www.lonelyplanet.com/philippines/the-visayas/boracay</a>,
+
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Island/Oslob_Whale_Shark.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Klaus Stiefel</p>
+
+                        <h5 class="mt-3">Oslob Whale Shark</h5>
+                        <h6 class="mt-3">Location: Oslob, Cebu</h6>
+
+                        <p>Whale shark watching activity in Oslob is an undeniable a popular attraction all over the world and yet also controversial. This incredible experience prompts tourist visitors to flock to Oslob shores to encounter these gentle
+                            giants. .</p>
+
+
+                        <a href="https://www.oslobwhalesharks.com/#">https://www.oslobwhalesharks.com/#</a>,
+
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Island/Bojo_River.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Quang Nguyen Vinh via Pexels</p>
+
+                        <h5 class="mt-3">Bojo River</h5>
+                        <h6 class="mt-3">Location: Aloguinsan, Cebu</h6>
+
+                        <p>Bojo River Cruise in the town of Aloguinsan, Cebu exemplifies sustainable tourism and is a well-applauded tourism destination in the world. Just recently, the Bojo River Cruise in Aloguinsan has made it again in the TOP 100 Global
+                            Sustainable Destinations for 3 consecutive years since 2016, Tourism Inspire Awards Winner in 2015 and ASEAN Tourism Award Community-based Category Winner in 2017. The river cruise is managed by the Bojo Aloguinsan Eco-tourism
+                            Association (BAETAS) and the Local Government Unit of Aloguinsan simply shows that nature and people can coexist to protect each other. The 1.4 km Bojo River is facing the Tanon Strait, the biggest marine protected area in
+                            the Philippines which highlights a mangrove tour with local guides telling you about the unique flora and fauna found in the area. </p>
+
+
+                        <a href="https://discover.cebu.gov.ph/tour/bojo-river-eco-cultural-tour/ ">https://discover.cebu.gov.ph/tour/bojo-river-eco-cultural-tour/ </a>,
+
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Island/PGCS.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Shear Irlandez of wordpress.com</p>
+
+                        <h5 class="mt-3">Sirao Flower Garden and Pictorial Garden and Camping Site (PGCS)</h5>
+                        <h6 class="mt-3">Location: Sirao, Cebu</h6>
+
+                        <p>Today, there are two Sirao gardens. The first one is the original Sirao Flower Garden where you will see the lovely flower beds of different colors. The garden suffered damages from irresponsible and reckless tourism. The management
+                            improved the gardens and had decided to add more attractions, hence the addition of the Sirao Pictorial Garden and Camping Site.
+                            <br>
+                            <br> Here, visitors can enjoy a resort-like accommodation since it has a swimming pool, fountains, and camping grounds. There are also kitschy decorations all over the garden, plus a few more Instagram-worthy spots like the
+                            giant hand and a lover’s nest.</p>
+
+
+                        <a href="https://cebubulletin.ph/sirao-garden/ ">https://cebubulletin.ph/sirao-garden/</a>,
+
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Island/Kawasan Falls.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Magnus D’Great M via Pexels</p>
+
+                        <h5 class="mt-3">Kawasan Falls</h5>
+                        <h6 class="mt-3">Location: Alegria, Cebu</h6>
+
+                        <p>Just 130 kilometers southwest of Cebu City and about three hours bus ride, the Kawasan Falls is located inside the mountains of Barangay Matutinao, Badian.
+                            <br>
+                            <br> From the entrance you will have to walk uphill for about 1.5 kl to get to the first waterfall. Along the way, souvenir shops are selling accessories such as beaded necklaces, bracelets, and Kawasan print t-shirts.
+                            <br>
+                            <br> Kawasan has many waterfalls. The first one is the largest of the three, and is usually the most crowded. An uphill climb for fifteen minutes will take you the second falls, and another, and another. It’s a good idea to
+                            bring in your own food, the resort’s restaurants are not cheap and prices are not marked.
+                            <br>
+                            <br> Kawasan Falls is a great get-away destination in the southern part of Cebu for family’s and gatherings.
+                        </p>
+
+
+                        <a href="https://www.kawasanfalls.net/ ">https://www.kawasanfalls.net/</a>,
+
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Island/Malapascua_Island.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Jonny Melon</p>
+
+                        <h5 class="mt-3">Malapascua Island</h5>
+                        <h6 class="mt-3">Location: Daanbantayan, Cebu</h6>
+
+                        <p>Just 130 kilometers southwest of Cebu City and about three hours bus ride, the Kawasan Falls is located inside the mountains of Barangay Matutinao, Badian.
+                            <br>
+                            <br> From the entrance you will have to walk uphill for about 1.5 kl to get to the first waterfall. Along the way, souvenir shops are selling accessories such as beaded necklaces, bracelets, and Kawasan print t-shirts.
+                            <br>
+                            <br> Kawasan has many waterfalls. The first one is the largest of the three, and is usually the most crowded. An uphill climb for fifteen minutes will take you the second falls, and another, and another. It’s a good idea to
+                            bring in your own food, the resort’s restaurants are not cheap and prices are not marked.
+                            <br>
+                            <br> Kawasan Falls is a great get-away destination in the southern part of Cebu for family’s and gatherings.
+                        </p>
+
+
+                        <a href="https://guidetothephilippines.ph/articles/ultimate-guides/malapascua-island-cebu-travel-guide ">https://guidetothephilippines.ph/articles/ultimate-guides/malapascua-island-cebu-travel-guide /</a>,
+
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Island/Kansalakan Echanted River.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Ben Klea via Unsplash</p>
+
+                        <h5 class="mt-3">Kansalakan Echanted River</h5>
+                        <h6 class="mt-3">Location: Guihulngan City, Negros Oriental</h6>
+
+                        <p>Kansalakan Enchanted River features a deep and clean river with small cascades and circular holes. The river is easily accessible as it crosses the main road of the village, making it a popular bathing and cliff jumping site for
+                            locals. A prominent feature of Kansalakan Enchanted River is a natural circular tub christened as “The Eye”. It is an icon within an icon as it lies on the cliff jumping spot near the road. What’s upstream is yet another uncharted
+                            territory. </p>
+
+
+                        <a href="https://www.lakwatsero.com/spots/kansalakan-enchanted-river-guihulngan/#sthash.fOraDehc.dpbs">https://www.lakwatsero.com/spots/kansalakan-enchanted-river-guihulngan/#sthash.fOraDehc.dpbs</a>,
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-cuisine" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Visayas's Famous Dishes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Dito na yung cusine/dishes -->
+                    <div>
+                        <img src='../Images/Visayas_Food/Kinilaw.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of www.foxyfolksy.com</p>
+
+                        <h5 class="mt-3">Kinilaw</h5>
+                        <h6 class="mt-3">Cuisine of Visayan Island</h6>
+                        <p>A favorite dish by every Visayan, kinilaw is basically a fresh fish or shellfish marinated in vinegar, lime, chilies, ginger, onion, spring onion, and garlic. It is eaten raw</p>
+
+                        <a href="https://balay.ph/best-of-visayan-cuisine/">https://balay.ph/best-of-visayan-cuisine/</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Food/Pansit Molo.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Kawalingpinoy.com</p>
+
+                        <h5 class="mt-3">Pancit Molo</h5>
+                        <h6 class="mt-3">Cuisine of Iloilo</h6>
+                        <p>Pancit molo is a dumpling soup dish popular in Iloilo. The dumplings contain minced chicken, ground pork, and chopped prawn cooked in a very tasty chicken broth.</p>
+
+                        <a href="https://balay.ph/best-of-visayan-cuisine/">https://balay.ph/best-of-visayan-cuisine/</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Food/Binakol.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Kawalingpinoy.com</p>
+
+                        <h5 class="mt-3">Binakol</h5>
+                        <h6 class="mt-3">Cuisine of Bacolod</h6>
+                        <p>Binakol is a tasty chicken dish similar to tinolang manok, except that coconut milk and meat are used in this particular Bacolod dish. What makes this Visayan cuisine treat really tasty is the use of native chicken, which is known
+                            to be more flavorful than the common poultry. Because native chickens are also tougher, binakol cooking takes several hours to make the meat tender and release all the flavors. </p>
+
+
+                        <a href="https://balay.ph/best-of-visayan-cuisine/">https://balay.ph/best-of-visayan-cuisine/</a>,
+
+                    </div>
+
+                    <hr>
+                    <!-- Dito na yung cusine/delicacy -->
+                    <h5 class="modal-title" id="exampleModalLabel">Visayas's Famous Delicacies</h5>
+
+                    <hr>
+
+                    <div>
+                        <img src='../Images/Visayas_Food/Suman Moron.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of www.foxyfolksy.com</p>
+
+                        <h5 class="mt-3">Chocolate/Suman Moron</h5>
+                        <h6 class="mt-3">Delicacy of Leyte</h6>
+                        <p>Suman Morón or Chocolate Morón (pronounced with the stress on the last syllable) or Muron, is an Eastern Visayan sweet rice cake comparable to the Suman that we all know. Moron, however, is made by rolling two layers together.
+                            The first layer is vanilla flavored while the second one is mixed with cocoa powder and sometimes with peanuts added. It is a popular delicacy in Leyte specifically in Tacloban City. It is always a part of local festivities
+                            such as fiestas, festivals, and birthdays.</p>
+
+                        <a href="https://www.foxyfolksy.com/suman-moron/ ">https://www.foxyfolksy.com/suman-moron/ </a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Food/Piaya.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of www.worldpress.com</p>
+
+                        <h5 class="mt-3">Piaya</h5>
+                        <h6 class="mt-3">Delicacy of Negros</h6>
+                        <p>Another Visayan delicacy that captured the taste of many is the piaya, [pronounced /pee-yah-yah/]. This sweet delicacy originally came from Negros, where it is popular, but it is also known in many parts of the country. Its dough
+                            is made with flour and water and muscovado sugar is used as fillings. It is then flattened and toasted until cooked.</p>
+
+                        <a href="https://balay.ph/best-of-visayan-cuisine/">https://balay.ph/best-of-visayan-cuisine/</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Food/Dried_Mangoes.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of www.pinterest.com</p>
+
+                        <h5 class="mt-3">Dried mangoes</h5>
+                        <h6 class="mt-3">Delicacy of Cebu</h6>
+                        <p>Cebu is the first manufacturer of dried mango in the country. This sweet, chewy, and delicious dried fruit is one of the favorite pasalubong of both locals and foreigners coming out of Cebu.</p>
+
+
+                        <a href="https://balay.ph/best-of-visayan-cuisine/">https://balay.ph/best-of-visayan-cuisine/</a>,
+
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Food/Otap.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of www.pinterest.co.uk</p>
+
+                        <h5 class="mt-3">Delicacy of Cebu</h5>
+                        <h6 class="mt-3">Cuisine of Bacolod</h6>
+                        <p>Another native delicacy from Cebu. It’s a puff pastry composed of flour, shortening, sugar, and coconut milk. It is flaky, crunchy, and so delicious that you’ll ask for more.</p>
+
+
+                        <a href="https://balay.ph/best-of-visayan-cuisine/">https://balay.ph/best-of-visayan-cuisine/</a>,
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-map-info" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Visayas's Map Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Map Information -->
+                    <div>
+                        <img src='../Images/Visayas_Island/Visayas_Island.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of freeworldmaps.net</p>
+
+                        <h5 class="mt-3">Visayan Islands</h5>
+                        <p>Visayan Islands, also called Visayas or Bisayas, island group, central Philippines. The Visayan group consists of seven large and several hundred smaller islands clustered around the Visayan, Samar, and Camotes seas. The seven
+                            main islands are Bohol, Cebu, Leyte, Masbate, Negros, Panay, and Samar. These islands and their smaller neighbors make up the central group of the Philippine archipelago. High mountains characterize most of the Visayan Islands
+                            with the exception of Samar and Masbate, which are exceedingly hilly. Panay has extensive eastern plains where sugarcane and rice are farmed. Negros has large western plains on which sugarcane is grown. Corn (maize), coconuts,
+                            bananas, tobacco, abaca, and root crops also are widely grown, and fishing is also important in the Visayas.</p>
+
+                        <br>
+
+                        <p>The densely populated Visayan island group constitutes an ethnolinguistic region defined by the dominance of the three major Visayan languages: Cebuano (which is the mother tongue of about one-fifth of the Philippines’ population),
+                            Hiligaynon, and Waray-Waray. Cebuano speakers live mainly on Cebu, Bohol, eastern Negros, and western Leyte. The Hiligaynon are concentrated on Panay, western Negros, and Masbate, while the Waray-Waray are found mainly on Samar
+                            and eastern Leyte. The two major Visayan urban centres are Cebu City on Cebu and Iloilo City on Panay. </p>
+
+                        <a href="https://www.britannica.com/place/Visayan-Islands ">https://www.britannica.com/place/Visayan-Islands </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-festivals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Visayas Festivals</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Festivals -->
+                    <div>
+                        <img src='../Images/Visayas_Festival/Ati-Atihan_Festival.png' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of iloilonews.ph</p>
+
+                        <h5 class="mt-3">Ati-Atihan Festival</h5>
+                        <h6 class="mt-3">When: 3rd Sunday of January</h6>
+                        <h6 class="mt-3">Where: Kalibo, Aklan</h6>
+                        <p>This is a celebration in honor of the Infant Jesus, the town’s patron. Ati-Atihan, observed in honor of the Child Jesus. Ati-atihan means ‘making like Atis,’ that is, pretending to be like the aboriginal natives that once inhabited
+                            Aklan. This involves smearing oneself with soot to darken the skin and dressing up in tribal finery. The start of the procession is signaled by drums and whistles, and later punctuated by shouts of “Hala Bira!”</p>
+
+                        <a href="https://www.tpb.gov.ph/events/ati-atihan-festival/">https://www.tpb.gov.ph/events/ati-atihan-festival/</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images/Visayas_Festival/Masskara_Festival.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of www.masskarafestival.ph</p>
+
+                        <h5 class="mt-3">Masskara Festival</h5>
+                        <h6 class="mt-3">When: 4th Sunday of October</h6>
+                        <h6 class="mt-3">Where: Bacolod City</h6>
+                        <p>This annual festival, which is similar to Brazil’s Rio Carnival, literally translates to “many faces,” and is celebrated every October in Bacolod. Because of the smiling faces of the mask, Bacolod City got the nickname of The City
+                            of Smiles.
+                            <br>
+                            <br> The MassKara Festival can trace its roots back in the 1980s and was born out of a crisis. It was during the time when the province's main livelihood, sugar, was priced at an all-time low because of alternatives introduced
+                            in the market.
+                            <br>
+                            <br> It was also the time when a tragic ferry accident happened, which carried mostly people from the province including those from prominent families of Bacolod. To lift the spirits of the locals and bring back the smiles
+                            on their faces, the MassKara Festival was created. The smiling masks were a declaration of the people of Bacolod City that they will pull through and survive the challenges and tragedies that they are facing.</p>
+
+                        <a href="https://guidetothephilippines.ph/articles/history-culture/masskara-festival-bacolod-guide">https://guidetothephilippines.ph/articles/history-culture/masskara-festival-bacolod-guide</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Visayas_Festival/Pintados-Kasadyaan Festival.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of TED Marketing in Topeventdestinations.com</p>
+
+                        <h5 class="mt-3">Pintados-Kasadyaan Festival</h5>
+                        <h6 class="mt-3">When: June 29</h6>
+                        <h6 class="mt-3">Where: Tacloban City, Leyte</h6>
+                        <p>The Pintados festival of Tacloban City is a Filipino festival with its own unique flavor. This Pintados festival recalls Pre-Spanish history of the native Leytenos from wars, epics and folk religions. The most expected aspect of
+                            the Pintados festival are the festive dancers, painted from head to toe with designs that look like armor to resemble the tattooed warriors of old. Kasadyaan festival, on the other hand, celebrates the cultural diversity of
+                            the Leyte region of the Philippines.
+                            <br>
+                            <br> Kasadyaan is a Visayan tongue word meaning to make merriment jollily. Local legend and folklore are portrayed by each participating municipality in colorful dance and song. The Pintados-Kasadyaan Festival is backed by
+                            a Pintados Foundation which was incorporated in 1986 for the Sr. Santo Nino fiesta.
+                            <br>
+                            <br> These merged festivals of Pintados and Kasadyaan portray the body paint techniques reminiscent of the ancient war tattoo patterns of the warriors. This feast was previously known as the Leyte Pintados-Kasadyaan Festival
+                            or the ‘Festival of Festivals.’ Señor Santo Niño de Leyte is the patron saint of the Leyte islands who is also revered every June 29th.
+                        </p>
+
+
+                        <a href="hhttps://topeventdestinations.com/festival/pintados-kasadyaan-festival/">hhttps://topeventdestinations.com/festival/pintados-kasadyaan-festival/</a>,
+                        <a href="hhttps://allabouttacloban.wordpress.com/pintados-kasadyaan-festival/">https://allabouttacloban.wordpress.com/pintados-kasadyaan-festival/</a>,
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Visayas_Festival/Hudyaka_Festival.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Dumaguete.com</p>
+
+                        <h5 class="mt-3">Hudyaka Festival</h5>
+                        <h6 class="mt-3">When: First week of September</h6>
+                        <h6 class="mt-3">Where: Bais City, Negros Oriental </h6>
+                        <p>It all started when fishermen would go out fishing for means of livelihood and some for consumption. Every day would bring a good supply of marine catch to the whole town. But one season the town’s marine catch decreased tremendously
+                            causing famine to the whole town. Faced with these trials, the towns people of Bais prayed to their patron saint; San Nicolas de Tolentino. In the spiritual corners of heaven, the town’s prayers were heard as the blessings
+                            of food arose from the shores of Bais. As a thanksgiving ritual, the Hudyaka was created. During the celebration of the Hudyaka Festival, the streets would be filled by music, colorful costumes, street dancing, and sometimes
+                            singing. Most of the things that can be seen during this festival is marine inspired. From fishes to sea urchin, shrimps, and even sea horses, can be seen. Other events such as the search for Miss Bais, live bands, disco, and
+                            even foam parties will be held during the Hudyaka Festival celebration.</p>
+
+                        <a href="https://buglasanfestival.com/hudyaka-festival-in-bais/">https://buglasanfestival.com/hudyaka-festival-in-bais/</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Visayas_Festival/Sandugo_Festival.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of Lourd Pocon</p>
+
+                        <h5 class="mt-3">Sandugo Festival</h5>
+                        <h6 class="mt-3">When: July 1 </h6>
+                        <h6 class="mt-3">Where: Tagbilaran City, Bohol </h6>
+                        <p>It is a historical event that takes place yearly in the island of Bohol. Otherwise known as the Bohol Sandugo Celebration or the Blood Compact Commemoration, this festival commemorates the treaty of friendship of Miguel Lopez de
+                            Legaspi and Datu Sikatuna; two people of different race and creed. Captain General Miguel Lopez de Legaspi led the expedition that represented the King of Spain and Datu Sikatuna was a native Boholano chieftain.</p>
+
+
+                        <a href="https://www.bohol-philippines.com/sandugo-festival.htm">https://www.bohol-philippines.com/sandugo-festival.htm</a>,
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Visayas_Festival/Manaragat_Festival.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of pna.gov.ph</p>
+
+                        <h5 class="mt-3">Manaragat Festival</h5>
+                        <h6 class="mt-3">When: August 1 to 31</h6>
+                        <h6 class="mt-3">Where: Catbalogan City, Samar</h6>
+                        <p>The Manaragat Festival is an annual month-long fiesta celebration (August 1–31). It is a tribute to the fishermen of Catbalogan City. The Manaragat is a festive dance characterized by varied movements and intricate steps of the
+                            different species of fish and seashells inhabiting the Maqueda Bay and beautifully presented by dancers in exotic and colorful costumes. The Manaragat Festival of Catbalogan City honors its Patron Saint, St. Bartholomew, every
+                            24 August. St. Bartholomew, the miraculous saint, is believed by the local folks to have maintained the richness of the Maqueda Bay as the major fishing ground of the province of Samar. </p>
+
+
+                        <a href="https://www.vigattintourism.com/tourism/articles/Manaragat-Festival">https://www.vigattintourism.com/tourism/articles/Manaragat-Festival</a>,
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Visayas_Festival/Pina_Festival.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of pna.gov.ph</p>
+
+                        <h5 class="mt-3">Piña Festival</h5>
+                        <h6 class="mt-3">When: 29th of June</h6>
+                        <h6 class="mt-3">Where: Ormoc City, Leyte</h6>
+                        <p>Honoring the city’s patron saints San Pablo and San Pedro and its world- famous Queen Pineapple, the festival has become another great addition to the long list of reasons visitors flock to the city each year. Ormoc’s Piña Festival
+                            is a true celebration of the things that are important to Ormocanons. And taking the center stage is the city’s unofficial icon — the queen table pineapple.</p>
+
+
+                        <a href="https://philippines.travel/events/pina-festival ">https://philippines.travel/events/pina-festival </a>,
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Visayas_Festival/Karatong_Festival.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of allaboutfiesta.wordpress.com</p>
+
+                        <h5 class="mt-3">Karatong Festival</h5>
+                        <h6 class="mt-3">When: 7th of September</h6>
+                        <h6 class="mt-3">Where: Dulag, Leyte</h6>
+                        <p>Karatong is the Waray (a native of and language in Leyte) word for bamboo. During the olden times, way before the Spaniards came to the Philippines, the people in Dulag used bamboos to warn the town if there were enemies, such
+                            as pirates and tribes, who wanted to invade their lands. They would make loud noises to warn the townsmen of the arrival of the intruders, and would use it also as their weapon in the form of spears to fight against the enemies.
+                            With the story they have, they will make it into a series of routines, amazing music and dance moves.</p>
+
+
+                        <a href="https://philippines.travel/events/karatong-festival ">https://philippines.travel/events/karatong-festival </a>,
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Visayas_Festival//Padul-ong_Festival.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of lespagesdulivre.wordpress.com</p>
+
+                        <h5 class="mt-3">Padul-ongFestival</h5>
+                        <h6 class="mt-3">When: 8th of September</h6>
+                        <h6 class="mt-3">Where: Borongan City, Eastern Samar</h6>
+                        <p>The Padul-ong Festival is held in honor of Borongan’s Patron Saint, Our Lady of Nativity. Every 7th of September, performance groups from all over the province take part in the festivities. A mythical presentation of how the image
+                            of the Blessed Virgin Mary was mysteriously transported to Borongan from Portugal and its connection to the lady in white who frequented the Hamorawon Spring and caused its water miraculously cure the locals.</p>
+
+
+                        <a href="https://philippines.travel/events/padul-ong-festival ">https://philippines.travel/events/padul-ong-festival </a>,
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src='../Images//Visayas_Festival/Sinulog.jpg' width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of SHUTTERSTOCK/KOBBY DAGAN</p>
+
+                        <h5 class="mt-3">Sinulog Festival</h5>
+                        <h6 class="mt-3">When: 15 January or every second Sunday of January</h6>
+                        <h6 class="mt-3">Where: Cebu City</h6>
+                        <p>The Sinulog Festival is Cebu’s biggest and most popular festival. The feast is in honor of the Holy Child, the Sto. Niño de Cebu. Fiesta Señor, as it is widely known, is the celebrated every 3rd Sunday of January where people converge
+                            along the route of a grand solemn procession and partake in the gaiety amidst a mardi-gras-type parade immersed in wild colors and the constant beating of drums of the ‘Pit Senyor’.</p>
+
+
+                        <a href="https://www.tpb.gov.ph/events/sinulog-festival/">https://www.tpb.gov.ph/events/sinulog-festival/</a>,
+                        <a href="https://philippines.travel/events/sinulog">https://philippines.travel/events/sinulog</a>,
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../Script/VisayasBooth.script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/606c02c8f7ce182709376eea/1f2iulnre';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luzon</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/png" href="../Images/logo_T.png">
+    <link href="../Style/LuzonBooth.Style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <a href="Exhibit.html" class="anchor">
+        Exit Luzon Booth
+    </a>
+
+    <div class="luzon-booth">
+        <img src="../Images/Luzon_Booth.png" width="100%">
+
+
+        <div class="btn-landmark"></div>
+
+        <div class="btn-cuisine"></div>
+
+        <div class="btn-tv1"></div>
+
+
+        <div class="btn-tv2"></div>
+
+        <div class="btn-map"></div>
+
+        <div class="btn-festival"></div>
+        <div class="video">
+            <video width="170" height="99" autoplay loop muted>
+                <source src="../Images/Luzon.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
+
+    <div class="modal fade" id="video-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <video width="100%" autoplay controls loop muted id="video-play">
+                        <source src="../Images/Luzon.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="landmark-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Tourist Spots of Luzon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Tourist Spots -->
+                    <img src="../Images/luzon(photos)/Landmarks/Mayon.jpg" width="100%" class="img-thumbnail">
+
+
+
+                    <div>
+                        <p style="text-align: center;">Photo courtesy of Tomas Tam (Wikipedia) </p>
+                        <h5 class="mt-3">Mayon Volcano</h5>
+
+                        <h6 class="mt-3">Location: Albay</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p> The most active volcano in the Philippines is well known for its perfect cone shape which actually signals how dangerous the volcano can be. Its geology and location could soon combine in explosive, and deadly, and fashion. Mount
+                            Mayon is known for its steep-sloped cone.
+                        </p>
+
+                        <a href="https://www.nationalgeographic.com">Source: https://www.nationalgeographic.com  </a>
+                    </div>
+                    <hr>
+
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Landmarks/Anangawin.jpg" width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center;">Photo courtesy of www.thepinaysolobackpacker.com</p>
+                        <h5 class="mt-3">Anangawin Cove</h5>
+
+                        <h6 class="mt-3">Location: Zambales</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>A crescent-shaped beach where grayish, volcanic sand and cerulean water blend majestically. Here, cliffs rise hundreds of feet from the ocean floor to Agoho-fringed peaks that were sprinkled by nature from the last eruption of
+                            the nearby Mt. Pinatubo.
+                        </p>
+                        <a href="https://www.zenrooms.com/blog/post/banaue-rice-terraces/">Source: https://www.zenrooms.com/blog/post/banaue-rice-terraces/  </a>
+
+                    </div>
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Landmarks/Banaue.jpg" width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center;">Photo courtesy of traveler.byunique.com</p>
+                        <h5 class="mt-3">Banaue Rice Terraces</h5>
+                        <h6 class="mt-3">Location: Ifugao</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>It is locally known as the Hagdan-Hagdang Palayan, are undoubtedly a source of pride not just for the Ifugaos but also for Filipinos across the world. Because of its magnificence, it has been inscribed on the UNESCO World Heritage
+                            List in 1995. Since then, the world has noticed and never stopped talking about the Rice Terraces of the Philippine Cordilleras. </p>
+                        <a href="https://www.thepinaysolobackpacker.com/anawangin-cove-zambales-travel-guide-itinerary-budget blog/#:~:text=Anawangin%20Cove%20in%20Zambales%20has,Pinatubo. ">Source: https://www.thepinaysolobackpacker.com/anawangin-cove-zambales-travel-guide-itinerary-budget blog/#:~:text=Anawangin%20Cove%20in%20Zambales%20has,Pinatubo.   </a>
+                    </div>
+
+
+                    <hr>
+
+                    <div class="mt-5">
+
+                        <img src="../Images/luzon(photos)/Landmarks/Intramuros.jpg" width="100%" class="img-thumbnail">
+                        <p style="text-align: center;">Photo courtesy of www.trip.com</p>
+
+                        <h5 class="mt-3">Intramuros</h5>
+                        <h6 class="mt-3">Location: Manila</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>Located south of the Pasig River and east of Manila Bay, the Walled City of Intramuros in Manila City was built by the Spaniards some 400 years ago as their political and military base in Asia. It is one of the top tourist spots
+                            in Manila, the capital of the Philippines.
+                        </p>
+                        <p>Apart from the 4.5-km. wall, from where the name came from (“within the walls”), other defensive structures used to surround the city, like moats, cannons, bulwarks, and javelins. Not only did it protect Intramuros from man-made
+                            disasters, but it also fended off threats from Chinese pirates, Dutch forces, and other invaders.
+                        </p>
+                        <p>Despite being heavily influenced by Spanish architecture (think grandiose baroque church designs), renovations made also revealed its Chinese influences. Some structures, however, were not restored after the destruction of multiple
+                            wars and remained today as ruins.
+                        </p>
+                        <a href="https://guidetothephilippines.ph/articles/ultimate-guides/intramuros-manila-travel-guide">Source:https://guidetothephilippines.ph/articles/ultimate-guides/intramuros-manila-travel-guide</a>
+                    </div>
+
+                    <hr>
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Landmarks/Taal.jpg" width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center;">Photo courtesy of www.ttgasia.com</p>
+
+                        <h5 class="mt=3">Taal Volcano</h5>
+                        <h6 class="mt-3">Location: Batangas</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>A part of a chain of volcanoes lining the western edge of the island of Luzon. They were formed by the subduction of the Eurasian Plate underneath the Philippine Mobile Belt. It remains as one of the most remarkable and eye-catching
+                            attractions of nature. It has become a must-visit destination for every traveler across the world because of its picturesque features like no other. </p>
+
+                        <a href="https://www.zenrooms.com/blog/post/taal-volcano/">Source: https://www.zenrooms.com/blog/post/taal-volcano/</a>
+                    </div>
+                    <hr>
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Landmarks/Mines View Park.jpg" width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center;">Photo courtesy of primer.com.ph</p>
+
+                        <h5 class="mt=3">Mines View Park</h5>
+                        <h6 class="mt-3">Location: Baguio</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>Boasts of a spectacular view of Benguet's gold and copper mines and the Cordillera mountains.The main attractions in Mines View Park nowadays would be the commercial activities such as the souvenir and silverworks stores by the
+                            park. The one especially worth visiting is Rimando's, that offers the best carved artifacts, on the Gibraltar side. Tourists also have a chance to get dressed in full Cordillera regalia -- bahag, shield and spear for the men,
+                            tapis for the ladies, vests and headdresses for both. </p>
+
+                        <a href="http://www.gobaguio.com/mines-view-park.html#.YF_RB68zbIU">Source: http://www.gobaguio.com/mines-view-park.html#.YF_RB68zbIU</a>
+                    </div>
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Landmarks/Puerto Prinsesa.jpg" width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center;">Photo courtesy of howdoigo.asia</p>
+
+                        <h5 class="mt=3">Puerto Prinsesa</h5>
+                        <h6 class="mt-3">Location: Palawan</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>Most famous for the Puerto Princesa Subterranean River National Park or the Underground River, a UNESCO World Heritage site and holds a place in the New7Wonders of Nature. </p>
+
+                        <a href="https://guidetothephilippines.ph">Source: https://guidetothephilippines.ph </a>
+                    </div>
+
+                    <hr>
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Landmarks/Sagada.jpg" width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center;">Photo courtesy of media.philstar.com</p>
+
+                        <h5 class="mt=3">Sagada</h5>
+                        <h6 class="mt-3">Location: Mountain Province</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>A small town in the mountain province of Luzon in the Philippines. Many visit for its cool and refreshing climate, beautiful caves and hanging coffins as well as the serene mountains.
+
+                        </p>
+
+                        <a href="https://wikitravel.org/en/Sagada">Source:  https://wikitravel.org/en/Sagada</a>
+                    </div>
+
+                    <hr>
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Landmarks/Vigan.jpg" width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center;">Photo courtesy of blueprint.onemega.com</p>
+
+                        <h5 class="mt=3">Vigan</h5>
+                        <h6 class="mt-3">Location: Ilocos Sur</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>It is famous for its well-preserved Spanish Colonial town, historical Vigan tourist spots, and delicious food and delicacies. Because of its charm, it has been inscribed as one of the UNESCO World Heritage Sites. </p>
+
+                        <a href="https://www.zenrooms.com ">Source: https://www.zenrooms.com </a>
+                    </div>
+
+                    <hr>
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Landmarks/Windmill.jpg" width="100%" class="img-thumbnail">
+
+                        <p style="text-align: center;">Photo courtesy of pinimg.com</p>
+
+                        <h5 class="mt=3">Bangui Windmill</h5>
+                        <h6 class="mt-3">Location: Ilocos Norte</h6>
+                        <h6 class="mt-3">Description:</h6>
+                        <p>Located all the way at the northwestern tip of Philippines' Luzon Island, in the Province of Ilocos Norte. The windmills form a gracefully shaped arc that reflect the shoreline alongside Bangui Bay, and face the West Philippine
+                            Sea. Due to Ilocos' location between the Pacific Ocean and the South China Sea, the province tends to have more wind than most others in the Philippines. This makes for just a great place for one of Southeast Asian's biggest
+                            wind farms.
+                        </p>
+
+                        <a href="https://travelthroughparadise.com/destinations/articles/Bangui_Bangui_Wind_Farm.php">Source: https://travelthroughparadise.com/destinations/articles/Bangui_Bangui_Wind_Farm.php</a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cuisines -->
+    <div class="modal fade" id="cuisine-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Cuisines and Delicacies of Luzon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <h5 class="mt-3">DELICACIES
+                        </h5>
+                        <hr>
+
+                        <img src="../Images/luzon(photos)/Cuisines/Balut.jpg" width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of shankars in flickr</p>
+                        <h5 class="mt-3 ">Balut</h5>
+                        <h6 class="mt-3">Delicacy of Pateros</h6>
+                        <p>Balut is a popular, although unusual Filipino delicacy, served everywhere from street stalls to upscale restaurants. It is a duck egg that has been hard-boiled, fertilized, and incubated. Traditionally, the cooked embryo is consumed
+                            straight from the shell. The dish can be seasoned with chili, garlic, vinegar, salt, lemon juice, ground pepper, and mint leaves. It can also be cooked in omelets or used as a filling for pastries.</p>
+                        <a href=" https://www.tasteatlas.com/balut">Source:https://www.tasteatlas.com/balut</a>
+                    </div>
+
+                    <hr>
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Cuisines/Kutsinta.jpg" width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of ytimg.com</p>
+                        <h5 class="mt-3">Kutsinta</h5>
+                        <h6 class="mt-3">Delicacy of Luzon</h6>
+                        <p>Of all the many rice cake-type dishes, kutsinta is one of our favorites. It has a gelatinous texture and is sweetened by brown sugar. The color is enhanced by adding atsuete extract or yellow food coloring. Often served for merienda,
+                            kutsinta also finds its way to celebratory tables during Christmas and fiesta time.
+                        </p>
+
+                        <a href="https://newgenbaker.com/sweet-filipino-favorites-from-luzon-the-visayas-mindanao/">Source: https://newgenbaker.com/sweet-filipino-favorites-from-luzon-the-visayas-mindanao/</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Cuisines/Bukopie.jpg" width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of www.spot.ph</p>
+                        <h5 class="mt-3">Buko Pie</h5>
+                        <h6 class="mt-3">Delicacy of Laguna</h6>
+                        <p>Originally from Laguna, it’s next to impossible to drive through the province without seeing a vendor hawking buko pie. This delicious baked treat has a filling made from young coconut and condensed milk.
+                        </p>
+                        <a href=" https://newgenbaker.com/sweet-filipino-favorites-from-luzon-the-visayas-mindanao/">Source: https://newgenbaker.com/sweet-filipino-favorites-from-luzon-the-visayas-mindanao/</a>
+                    </div>
+
+                    <hr>
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Cuisines/Empanada.jpg" width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of Dough Co.</p>
+                        <h5 class="mt-3">Ilocos Empanada</h5>
+                        <h6 class="mt-3">Delicacy of Ilocos Region</h6>
+                        <p>Ilocos Empanada is an orange-tinged fried dish stuffed with vegetables or papaya, skinless Vigan Longganisa, and egg. Nowadays, there are many additions to the empanada. Some add bagnet, mongo, and even hotdogs.
+                        </p>
+                        <a href=" https://newgenbaker.com/sweet-filipino-favorites-from-luzon-the-visayas-mindanao/">Source: https://newgenbaker.com/sweet-filipino-favorites-from-luzon-the-visayas-mindanao/</a>
+                    </div>
+                    <hr>
+                    <div class="mt-5">
+                        <h5 class="mt-3">CUISINES
+                        </h5>
+                        <hr>
+                        <img src="../Images/luzon(photos)/Cuisines/Tulingan.jpg" width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of eatlikepinoy.com</p>
+                        <h5 class="mt-3 ">Sinaing na Tulingan</h5>
+
+                        <h6 class="mt-3">Cuisine of Batangas</h6>
+
+                        <p>Sinaing na Tulingan is a Batangueno dish, whose name directly translates to braised fish, specifically mackerel and spikjack tuna. The process to make Sinaing na Tulingan is quite tedious, taking over several hours. It usually
+                            involves simmering fish in large native earthenware pots with bilimbi/kamias, salt, and water. This brine helps remove the fishy flavor and helps preserve the fish over time.</p>
+
+                        <a href="https://www.rappler.com/life-and-style/food-drinks/local-dishes-delicacies-from-luzon-to-try-out ">Source: https://www.rappler.com/life-and-style/food-drinks/local-dishes-delicacies-from-luzon-to-try-out</a>
+                    </div>
+                    <hr>
+                    <div class="mt-5">
+
+                        <img src="../Images/luzon(photos)/Cuisines/Papaitan.jpg" width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo Courtesy of www.yummy.ph</p>
+                        <h5 class="mt-3 ">Papaitan</h5>
+
+                        <h6 class="mt-3">Cuisine of Ilocos</h6>
+                        <p>Papaitan is a famous Ilocano dish whose name comes from the word pait or bitter. Comprised of goat and cow innards, papaitan’s distinct sour flavor and yellow color comes from the bile that is extracted from the animal’s liver.
+                            While for the uninitiated, this may sound straight out of Fear Factor, the dish is balanced out with various spices and aromatics common in Philippine cuisine, such as ginger, garlic, and tamarind. </p>
+                        <a href=" https://www.rappler.com/life-and-style/food-drinks/local-dishes-delicacies-from-luzon-to-try-out">Source: https://www.rappler.com/life-and-style/food-drinks/local-dishes-delicacies-from-luzon-to-try-out</a>
+
+                    </div>
+                    <hr>
+                    <div class="mt-5">
+
+                        <img src="../Images/luzon(photos)/Cuisines/Poqui.jpg" width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of www.lutongbahayrecipe.com</p>
+                        <h5 class="mt-3 ">Poqui-Poqui </h5>
+
+                        <h6 class="mt-3">Cuisine of Ilocos Region</h6>
+                        <p>It is notorious for having an uncanny name, is a prime example of making humble ingredients shine with flavor. Made with vegetables like eggplant, tomatoes, and eggs, poqui poqui stands out as a flavorful meatless dish. </p>
+                        <a href="https://www.yummy.ph/lessons/cooking/filipino-dishes-recipes-from-luzon">Source: https://www.yummy.ph/lessons/cooking/filipino-dishes-recipes-from-luzon</a>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div class="modal fade" id="map-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Map of Luzon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div>
+                        <img src="../Images/luzon(photos)/Luzon map.jpg" width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of freeworldmap.net</p>
+
+                        <h5 class="mt-3">Luzon</h5>
+
+                        <p> The name Luzon is thought to derive from lusong, a Tagalog word referring to a particular kind of large wooden mortar used in dehusking rice.
+                        </p>
+                        <p> Luzon is the main island of the Philippines and contains most of its active volcanoes. Volcanic activity is concentrated on the Luzon arc, which is associated with the eastward subduction of the South China Sea floor along the
+                            Manila Trench. It is the largest and most important island of the Philippines.
+                        </p>
+                        <p> The Luzon islands include Luzon itself, Palawan, Mindoro, Marinduque, Masbate, Romblon, Catanduanes, Batanes, and Polillo.
+                        </p>
+                        <p> Luzon, which was coined after the Tagalog word kalusunan (which means northern part), is the country's largest island. Hence, it's expected to have the greatest population among the three island groups.
+                        </p>
+
+
+                        <a href="https://theculturetrip.com">Source:https://theculturetrip.com
+
+                    </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Festivals -->
+    <div class="modal fade" id="festival-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Festivals of Luzon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div>
+                        <img src="../Images/luzon(photos)/Festivals/Pahiyas.jpg " width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of theculturetrip.com</p>
+
+
+                        <h5 class="mt-3">Pahiyas Festival</h5>
+
+                        <h6 class="mt-3">Location: Quezon Province
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: 5th day of May </h6>
+                        <p>A colorful feast celebrated by the people of Lucban, Quezon in honor of San Isidro Labrador. It is the farmer's thanksgiving for a bountiful harvest with a grand display of colorful rice wafers, fruits, vegetables and handicrafts
+                            adorning every house in the town.</p>
+                        <a href=" https://sites.google.com/site/touristsdestination/luzon-3 ">Source: https://sites.google.com/site/touristsdestination/luzon-3</a>
+                    </div>
+
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Festivals/Panagbenga.jpg" width="100%" class="img-thumbnail ">
+                        <p style="text-align: center; ">Photo courtesy of pilipinaspopcorn.com</p>
+                        <h5 class="mt-3">Panagbenga Festival</h5>
+
+                        <h6 class="mt-3">Location: Baguio City
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: whole month of February </h6>
+                        <p>“Panagbenga” translated means “a season of blossoming”⁠A name for a festival that highlights Baguio’s flowers, Although celebrations last all month long, the anticipated float parade and street dancing happen during the last week
+                            of the festival.</p>
+                        <a href="https://www.phbus.com/blog/top-9-famous-festivals-in-the-philippines/ ">Source: https://www.phbus.com/blog/top-9-famous-festivals-in-the-philippines/</a>
+                    </div>
+
+
+                    <hr>
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Festivals/Mariones.jpg " width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of Melo Villareal</p>
+
+
+                        <h5 class="mt-3">Moriones Festival</h5>
+
+                        <h6 class="mt-3">Location: Marinduque
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: Palm Sunday-Easter Sunday (Holy Week)</h6>
+
+
+                        <p>“Marinduque’s Moriones Festival began in 1807 when Padre Dionsio Santiago, a Mogpog parish priest, organised a play based on the story of Longinus (or Longino), one of the Roman centurions assigned to execute Christ. A drop of
+                            Christ’s blood miraculously restored sight in Longinus’ blind right eye during the crucifixion. Longinus instantly proclaimed his faith, whereupon he was chased around town, captured and summarily beheaded.</p>
+
+                        <p>These days, a fabulous Easter festival combining folk mysticism with Catholic pageantry turns Marinduque’s streets into a colourful reenactment of those events, drawn out over the seven days of Holy Week. Each municipality in Marinduque
+                            holds its own festival, in which hundreds of moriones don centurion masks and costumes and arm themselves with wooden swords, spears and shields.</p>
+
+                        <a href="https://www.tagaloglang.com/moriones-festival-of-marinduque/ ">Source: https://www.tagaloglang.com/moriones-festival-of-marinduque/</a>
+                    </div>
+                    <hr>
+
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Festivals/Lantern.jpg" width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of pinimg.com</p>
+
+
+                        <h5 class="mt-3">Giant Lantern Festival</h5>
+
+                        <h6 class="mt-3">Location: Pampanga
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: December 16 – January 3</h6>
+
+
+                        <p>San Fernando, Pampanga is well known for its quality Christmas parols (a.k.a. giant lanterns). A yearly competition is held to come up with the best parol design. Deliberation occurs on the festival date, which is the weekend before
+                            Christmas. Although the government allots a subsidy for each village, the locals also chip in to fund their unique creations. These giant lanterns can be costly to make as Pampanga’s parols can reach up to 20 feet in height.</p>
+
+
+
+                        <a href="https://www.phbus.com/blog/top-9-famous-festivals-in-the-philippines/">Source: https://www.phbus.com/blog/top-9-famous-festivals-in-the-philippines/</a>
+                    </div>
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Festivals/Aliwan.jpg " width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of iamdencio of flickr.com</p>
+
+
+                        <h5 class="mt-3">Aliwan Festival</h5>
+
+                        <h6 class="mt-3">Location: Pasay City
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: April 25-27</h6>
+
+
+                        <p>It is an annual event just like most of the other Philippines festivals, and it is all about celebrating the diverse culture of the locals. The Fiesta brings together multiple festivals to gather in Pasay City. Due to the sheer
+                            magnitude of the fiesta, the city throngs with culture enthusiasts and other travelers. The fiesta is referred to as the ‘Mother of all festivals’, and for good reason. The fiesta not only brings together large numbers of tourists,
+                            but it is also an adventure of sorts if the competitions and prize money are anything to go by. It gathers people from all different regions of the country, and it is sort of like a combination of all of the regions’ respective
+                            festivals.
+                        </p>
+
+
+
+                        <a href="https://expertworldtravel.com/philippines/aliwan-fiesta/">Source:https://expertworldtravel.com/philippines/aliwan-fiesta/</a>
+                    </div>
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Festivals/Bangus.jpg " width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of dagupanbangusfestival.com</p>
+
+
+                        <h5 class="mt-3">Bangus Festival</h5>
+
+                        <h6 class="mt-3">Location: Dagupan, Pangasinan
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: 19 days in April</h6>
+
+
+                        <p>The bangus, or milkfish, festival pays tribute to the City’s biggest industry and features various activities that center on the fish. From deboning to eating, from the longest to the heaviest and even to the most beautiful, each
+                            year attempts to put out a record with its bangus competitions.
+                        </p>
+
+
+
+                        <a href="https://pinoyfestivals.wordpress.com/different-luzon-festivals/ ">Source:https://pinoyfestivals.wordpress.com/different-luzon-festivals/ </a>
+                    </div>
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Festivals/Fertility.jpg " width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of yuneoh.com</p>
+
+
+                        <h5 class="mt-3">Fertility Dance Festival</h5>
+
+                        <h6 class="mt-3">Location: Bulacan
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: May 17-19</h6>
+
+
+                        <p>The street dancing is said to be a prayer made by the couple. The belief stems from early practice and is said to be effective, as some have been miraculously blessed with an offspring soon after they joined the dancing.
+                        </p>
+
+
+
+                        <a href="https://pinoyfestivals.wordpress.com/different-luzon-festivals/ ">Source: https://pinoyfestivals.wordpress.com/different-luzon-festivals/ </a>
+                    </div>
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Festivals/Imbayah.jpg" width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of Lauren Alimondo of sunstar.com.ph</p>
+
+
+                        <h5 class="mt-3">Imbayah Festival</h5>
+
+                        <h6 class="mt-3">Location: Banaue, Ifugao
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: April 25-29</h6>
+
+
+                        <p>The feast is focused on different areas and products of the entire province such as the making of wine, walling of stone, and planting of rice. The actual derivation of the Imbayah festival came from the local word “Bayah” which
+                            refers to a rice wine whereas the word “Bumayah,” as well as “Imbuyah,” refers to the concept of having a bountiful harvest. Combining the two local terms paved the way to the birth of the festivity, the Imbayah. During ancient
+                            times, this celebration was only limited to the elite members of the tribes. But now, this is freely open for all because it is also a way of sharing their tribes’ culture and tradition.
+                        </p>
+
+
+
+                        <a href="https://expertworldtravel.com/philippines/aliwan-fiesta/">Source:https://expertworldtravel.com/philippines/aliwan-fiesta/</a>
+                    </div>
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Festivals/Pagoda.jpg " width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of pintakasi1512.blogspot.com</p>
+
+
+                        <h5 class="mt-3">Pagoda sa Wawa</h5>
+
+                        <h6 class="mt-3">Location: Photo courtesy of pintakasi1512.blogspot.com
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: First Sunday of July</h6>
+
+
+                        <p>The river festival is held every July, when a barge carrying a huge decorated float is released along the Bocaue River. This is where dozens and possibly hundreds of people partake on good food and great music. The floating feast
+                            actually commemorates Wawa’s Holy Cross, which was first found floating on the Bocaue River.
+                        </p>
+
+
+
+                        <a href="https://pinoyfestivals.wordpress.com/different-luzon-festivals/ ">Source: https://pinoyfestivals.wordpress.com/different-luzon-festivals/ </a>
+                    </div>
+                    <hr>
+
+                    <div class="mt-5">
+                        <img src="../Images/luzon(photos)/Festivals/Pav-vurulun Afi.jpg " width="100%" class="img-thumbnail">
+                        <p style="text-align: center; ">Photo courtesy of iamdencio of flickr.com</p>
+
+
+                        <h5 class="mt-3">Pav-vurulun Afi Festival</h5>
+
+                        <h6 class="mt-3">Location: Tuguegarao City
+                        </h6>
+                        <h6 class="mt-3">Date of celebration: August 10-17</h6>
+
+
+                        <p>The country’s first-ever “fire” festival was born in 2014 after the city of Tuguegarao decided to celebrate the title as the hottest city in the Philippines. Pavvurulun and Afi are Ybanag words that mean “get-together” and “fire.”
+                        </p>
+
+
+
+                        <a href="https://expertworldtravel.com/philippines/aliwan-fiesta/">Source:https://expertworldtravel.com/philippines/aliwan-fiesta/</a>
+                    </div>
+                    <hr>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Bootstrap js-->
+    <script src="../Script/LuzonBooth.script.js "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/606c02c8f7ce182709376eea/1f2iulnre';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+
+</html>
